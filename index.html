@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body> 
+
+<div class="flex-container">
+<header>
+  <h1>Home</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="aspirations.html">Aspirations</a></li>
+  <li><a href="resume.html">Resume</a></li>
+</ul>
+</nav>
+
+<article class="article">
+	<head>
+		<title>Maam Fall Personal Website</title>
+		<link href="styles.css" rel="stylesheet">
+	</head>
+		<H2>Maam Fall,</H2>
+		<H1>Branch Manager, Collegiate Entrepreneurs & UMO Marketing Major</H1>
+			<IMG SRC="IMG_0667.jpg" width=300 height=350>
+			<IMG SRC="IMG_1021.jpg" width=300 height=350>
+			<IMG SRC="IMG_0288.jpg" width=300 height=350>
+	<p>Hello world! Welcome to my very own personal website. I am a student at <A HREF="https://umaine.edu/"> University of Maine </A>the  studying marketing and Entrepreneurship. I have a job lined up this summer as a branch manager for Collegiate Entrepreneurs and I look forward to the challenge of running my own painting business. When I am not working you can catch me at the gym, Ohop bar, or hanging around at my house of the ave. I am an avid music listener and enjoy playing the guitar in my spare time. Rap/ hip-hop, EDM/house/trap, and alternative rock are amongst my favorite types of music, although I can listen to anything that has a good vibe. One last thing, I love soccer! Liverpool or nothing, baby!</p> 
+	<p>Feel free to browse around my site, I have a gallery, resume, and aspirations pages. Enjoy.</p> 
+	</article>
+</div>
+</body>
+</html>

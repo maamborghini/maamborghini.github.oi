@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>My Publications</title>
+	<link href="styles.css" rel="stylesheet">
+	</head>
+	
+	<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Aspirations</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="aspirations.html">Aspirations</a></li>
+  <li><a href="resume.html">Resume</a></li>
+</ul>
+</nav>
+
+<article class="article">
+	<article>
+		<p>Ultimately I would like to run my own business, preferably a market consulting firm that specializes in helping companies save money and create brand equity through embracing state-of-the-art renewable technologies and green business practices.</p>
+		<p>Moreover, I would like to give back to the community by helping those who have fallen on hard times get back onto their feet in a self sustaining, responsible way.</p>
+		<p>I would also like to travel the globe, specifically:</p> 
+	<ul>
+		<li>Southeast Asia</li>
+		<li>New Zealand/ Australia</li>
+		<li>The alps</li>
+		<li>The Himalayas</li>
+		<li>The West coast and Alaska</li>
+	</ul>
+	<p>My goal is to learn how to climb mountains and kayak proficiently so that I can go to places that most people will never be able to see. The natural world is something that has never ceased to amaze me.</p>
+	<IMG SRC="img_0666.jpg" width=900 height=500> 
+	<IMG SRC="img_0579.jpg" width=900 height=500>
+	<IMG SRC="img_0830.jpg" width=900 height=500>
